@@ -8,7 +8,7 @@ public class Pelicula {
 	private String titulo;
 	private int duracion;
 	private String sinopsis;
-	private ArrayList<Actor> actores = new ArrayList<Actor>();
+	private ArrayList<Actor> actores;
 	private Director director;
 	private Categoria categoria;
 
@@ -42,5 +42,34 @@ public class Pelicula {
 
 	public void setSinopsis(String sinopsis) {
 		this.sinopsis = sinopsis;
+	}
+
+	public ArrayList<Actor> getActores() {
+		return actores;
+	}
+	public void setActores(ArrayList<Actor> actores) {
+		this.actores = actores;
+	}
+	public Director getDirector() {
+		return director;
+	}
+	public void setDirector(Director director) {
+		this.director = director;
+	}
+	public Categoria getCategoria() {
+		return categoria;
+	}
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
+	}
+
+	public Pelicula(LocalDate fechaEstreno, String titulo, int duracion, String sinopsis, Director director, Categoria categoria) {
+		this.fechaEstreno = fechaEstreno;
+		this.titulo = titulo;
+		this.duracion = duracion;
+		this.sinopsis = sinopsis;
+		this.actores = new ArrayList<>();
+		this.director = director;
+		this.categoria = categoria;
 	}
 }
