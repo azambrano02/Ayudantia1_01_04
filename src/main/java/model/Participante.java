@@ -28,4 +28,10 @@ public class Participante {
 	public void setEdad(int edad) {
 		this.edad = edad;
 	}
+
+	public Participante(String nombre, String sexo, int edad) {
+		this.nombre = nombre;
+		this.sexo = sexo;
+		this.edad = edad;
+	}
 }
